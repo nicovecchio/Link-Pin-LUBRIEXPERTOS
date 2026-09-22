@@ -1,6 +1,6 @@
 import type { ComponentType, SVGProps } from "react"
 import { MapPin } from "lucide-react"
-import { WhatsAppIcon, InstagramIcon } from "@/components/brand-icons"
+import { WhatsAppIcon, InstagramIcon, TikTokIcon } from "@/components/brand-icons"
 
 type IconType = ComponentType<SVGProps<SVGSVGElement>>
 
@@ -25,31 +25,58 @@ export type ProfileData = {
   links: MainLink[]
 }
 
-// ────────────────────────────────────────────────────────────────
-//  Edita libremente este objeto para personalizar tu página.
-// ────────────────────────────────────────────────────────────────
+// Edita libremente este objeto para personalizar tu página.
+
 export const profileData: ProfileData = {
-  avatarUrl: "/profile.png",
-  name: "Zaituna Cafe",
-  bio: "Compartir contigo nos hace feliz",
+  avatarUrl: "/profile..png",
+  name: "Lubriexpertos",
+  bio: "Este es tu lugar. Somos los expertos",
   socialLinks: [
     {
-      label: "Instagram",
-      url: "https://instagram.com/zaitunacafe",
-      icon: InstagramIcon,
+      label: "Google Maps",
+      url: "https://www.google.com/maps/place/F4Q9%2BGFM+LUBRIEXPERTOS,+Calle+Pasteur,+Caracas+1041,+Miranda/@10.4888328,-66.8813384,17z/data=!4m6!3m5!1s0x8c2a58ddc3d1e215:0x210138aebf03e05d!8m2!3d10.4888328!4d-66.8813384!16s%2Fg%2F11dft1xgxd?hl=es&g_ep=Eg1tbF8yMDI2MDkxNV8wIJvbDyoASAJQAg%253D%253D",
+      icon: MapPin,
     },
     {
       label: "WhatsApp",
-      url: "https://api.whatsapp.com/send/?phone=584242753345&text&type=phone_number&app_absent=0",
+      url: "https://wa.link/44vhlz",
       icon: WhatsAppIcon,
+    },
+    {
+      label: "Instagram",
+      url: "https://www.instagram.com/lubriexpertos?stkn=MWwzMGowNzUyZWFzNA%3D%3D",
+      icon: InstagramIcon,
+    },
+    {
+      label: "TikTok",
+      url: "https://www.tiktok.com/@lubriexpertos1?_r=1&_t=ZN-99x0zRMwPPq",
+      icon: TikTokIcon,
     },
   ],
   links: [
     {
-      title: "Visítanos",
-      subtitle: "Zaituna Café · Sambil Caracas",
-      url: "https://google.com/maps/place/Zaituna+Café+Sambil+Caracas/@10.4888557,-66.8539086,18.5z/data=!4m8!3m7!1s0x8c2a59a8552d2501:0x8fc704ab3a62205b!8m2!3d10.4886374!4d-66.8541086!9m1!1b1!16s%2Fg%2F11sdbfwg6q?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D",
+      title: "Ubicación en Google Maps",
+      subtitle: "Calle Pasteur, Caracas",
+      url: "https://www.google.com/maps/place/F4Q9%2BGFM+LUBRIEXPERTOS,+Calle+Pasteur,+Caracas+1041,+Miranda/@10.4888328,-66.8813384,17z/data=!4m6!3m5!1s0x8c2a58ddc3d1e215:0x210138aebf03e05d!8m2!3d10.4888328!4d-66.8813384!16s%2Fg%2F11dft1xgxd?hl=es&g_ep=Eg1tbF8yMDI2MDkxNV8wIJvbDyoASAJQAg%253D%253D",
       icon: MapPin,
+    },
+    {
+      title: "WhatsApp",
+      subtitle: "Contáctanos directamente",
+      url: "https://wa.link/44vhlz",
+      icon: WhatsAppIcon,
+    },
+    {
+      title: "Instagram",
+      subtitle: "@lubriexpertos",
+      url: "https://www.instagram.com/lubriexpertos?stkn=MWwzMGowNzUyZWFzNA%3D%3D",
+      icon: InstagramIcon,
+    },
+    {
+      title: "TikTok",
+      subtitle: "@lubriexpertos1",
+      url: "https://www.tiktok.com/@lubriexpertos1?_r=1&_t=ZN-99x0zRMwPPq",
+      icon: TikTokIcon,
     },
   ],
 }
