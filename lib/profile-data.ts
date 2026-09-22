@@ -1,6 +1,6 @@
 import type { ComponentType, SVGProps } from "react"
-import { MapPin } from "lucide-react"
-import { WhatsAppIcon, InstagramIcon, TikTokIcon } from "@/components/brand-icons"
+import { MapPin, Video } from "lucide-react"
+import { WhatsAppIcon, InstagramIcon } from "@/components/brand-icons"
 
 type IconType = ComponentType<SVGProps<SVGSVGElement>>
 
@@ -25,6 +25,8 @@ export type ProfileData = {
   links: MainLink[]
 }
 
+// Edita libremente este objeto para personalizar tu página.
+
 export const profileData: ProfileData = {
   avatarUrl: "/profile..png",
   name: "LUBRIEXPERTOS",
@@ -48,7 +50,7 @@ export const profileData: ProfileData = {
     {
       label: "TikTok",
       url: "https://www.tiktok.com/@lubriexpertos1?_r=1&_t=ZN-99x0zRMwPPq",
-      icon: TikTokIcon,
+      icon: Video,
     },
   ],
   links: [
@@ -74,7 +76,7 @@ export const profileData: ProfileData = {
       title: "TikTok",
       subtitle: "@lubriexpertos1",
       url: "https://www.tiktok.com/@lubriexpertos1?_r=1&_t=ZN-99x0zRMwPPq",
-      icon: TikTokIcon,
+      icon: Video,
     },
   ],
 }
