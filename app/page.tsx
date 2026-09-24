@@ -1,13 +1,13 @@
-import Image from "next/image"
-import { Chakra_Petch } from "next/font/google"
-import { profileData } from "@/lib/profile-data"
-import { SocialIcons } from "@/components/social-icons"
-import { LinkButton } from "@/components/link-button"
+import Image from 'next/image'
+import { Chakra_Petch } from 'next/font/google'
+import { profileData } from '@/lib/profile-data'
+import { SocialIcons } from '@/components/social-icons'
+import { LinkButton } from '@/components/link-button'
 
 const fontBrand = Chakra_Petch({
-  subsets: ["latin"],
-  weight: ["700"],
-  style: ["italic"],
+  subsets: ['latin'],
+  weight: ['700'],
+  style: ['italic'],
 })
 
 export default function Page() {
@@ -40,7 +40,7 @@ export default function Page() {
               className="absolute -inset-1 rounded-full bg-red-600 blur-sm opacity-70"
             />
             <Image
-              src={avatarUrl || "/placeholder.svg"}
+              src={avatarUrl || '/placeholder.svg'}
               alt={`Foto de perfil de ${name}`}
               width={112}
               height={112}
@@ -52,7 +52,7 @@ export default function Page() {
           <div className="space-y-2">
             {/* Nombre con tipografía compacta, inclinada y estilo motor */}
             <h1
-              className={`${fontBrand.className} text-balance text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-white drop-shadow-[0_2px_12px_rgba(220,38,38,0.7)]`}
+              className={`${fontBrand.className} text-balance text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-white`}
             >
               {name}
             </h1>
@@ -72,8 +72,17 @@ export default function Page() {
           ))}
         </div>
 
-        <footer className="pt-2 text-center text-xs text-zinc-500">
-          {`© ${new Date().getFullYear()} ${name}`}
+        {/* Firma comercial acoplada al estilo automotriz/deportivo */}
+        <footer className="pt-2 text-center text-sm font-semibold tracking-wide text-zinc-400">
+          Powered by{' '}
+          <a
+            href="https://tarjetaspersonalizadas.ve"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${fontBrand.className} bg-gradient-to-r from-red-500 via-red-400 to-zinc-200 bg-clip-text text-transparent uppercase tracking-wider transition-opacity hover:opacity-80`}
+          >
+            tarjetaspersonalizadas.ve
+          </a>
         </footer>
       </section>
     </main>
